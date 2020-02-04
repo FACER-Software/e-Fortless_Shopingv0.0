@@ -24,7 +24,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-public class Princi extends AppCompatActivity implements OnNavigationItemSelectedListener{
+public class Princi extends AppCompatActivity /*implements OnNavigationItemSelectedListener*/{
 
     private AppBarConfiguration mAppBarConfiguration;
 
@@ -45,7 +45,7 @@ public class Princi extends AppCompatActivity implements OnNavigationItemSelecte
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
 
-        navigationView.setNavigationItemSelectedListener();
+       // navigationView.setNavigationItemSelectedListener();
 
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
@@ -74,12 +74,12 @@ public class Princi extends AppCompatActivity implements OnNavigationItemSelecte
                 || super.onSupportNavigateUp();
     }
 
-    @Override
+    /*@Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
         boolean fragmenTransaction = false;
         Fragment fragment = null;
 
-        switch (menuItem.getItemId()){
+       /* switch (menuItem.getItemId()){
             case R.id.nav_Principal:
                 fragment = new Fragment1();
                 fragmenTransaction = true;
@@ -116,6 +116,6 @@ public class Princi extends AppCompatActivity implements OnNavigationItemSelecte
 
         drawerLayout.closeDrawers();
 
-        return true;
-    }
+        return true;*/
 }
+
