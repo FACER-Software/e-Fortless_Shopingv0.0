@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fondo_res" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginBottom="70dp"
+            android:padding="10dp"
+            android:src="@drawable/icono" />
+
+        <Button
+            android:id="@+id/Inicio"
+        android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/btn_redondeado"
+            android:elevation="5dp"
+            android:text="Iniciar Sesión"
+            android:textAllCaps="false"
+            android:textColor="@color/naranja1"
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/Facebook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/btn_redondeado_face"
+            android:elevation="5dp"
+            android:text="Iniciar con Facebook"
+            android:textAllCaps="false"
+            android:textColor="@color/blanco"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

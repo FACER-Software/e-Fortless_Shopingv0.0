@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#E87F51</color>
+    <color name="colorPrimaryDark">#d18c54</color>
+    <color name="colorAccent">#2c365d</color>
+    <color name="blanco">#FFF</color>
+    <color name="negro">#000</color>
+    <color name="naranja">#d18c54</color>
+    <color name="naranja1">#E87F51</color>
+    <color name="naranja2">#E8AB51</color>
+    <color name="azulito">#2c365d</color>
+    <color name="azulito1">#2C5869</color>
+    <color name="azulito2">#402C69</color>
+
+
+</resources>
