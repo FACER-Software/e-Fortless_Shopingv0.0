@@ -11,12 +11,12 @@ import androidx.fragment.app.Fragment;
 
 import mx.ipn.e_fortlessshoping.R;
 
-public class HomeContentFragment extends Fragment {
+public class HomeContentFragment1 extends Fragment {
 
     private  static final  String TEXT = "text";
 
-    public static mx.ipn.e_fortlessshoping.ui.HomeContentFragment1 newInstance(String text){
-        mx.ipn.e_fortlessshoping.ui.HomeContentFragment1 frag = new mx.ipn.e_fortlessshoping.ui.HomeContentFragment1();
+    public static HomeContentFragment1 newInstance(String text){
+        HomeContentFragment1 frag = new HomeContentFragment1();
 
         Bundle args = new Bundle();
         args.putString(TEXT, text);

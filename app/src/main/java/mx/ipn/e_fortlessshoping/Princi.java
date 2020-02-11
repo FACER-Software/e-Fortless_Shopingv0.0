@@ -3,10 +3,8 @@ package mx.ipn.e_fortlessshoping;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.navigation.NavigationView.OnNavigationItemSelectedListener;
 import com.google.android.material.snackbar.Snackbar;
 
-import android.view.Gravity;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.Menu;
@@ -29,7 +27,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-import mx.ipn.e_fortlessshoping.ui.home.HomeFragment;
+import mx.ipn.e_fortlessshoping.ui.HomeContentFragment1;
 
 public class Princi extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, DrawerLayout.DrawerListener {
 
@@ -42,7 +40,8 @@ public class Princi extends AppCompatActivity implements NavigationView.OnNaviga
         setContentView(R.layout.activity_menu);
 
         Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+        setSupportActionBar((Toolbar) findViewById(R.id.toolbar));
+
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -53,18 +52,18 @@ public class Princi extends AppCompatActivity implements NavigationView.OnNaviga
         });
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
-        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
+        /*ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawerLayout, toolbar, R.string.navigation_drawer_open,
                 R.string.navigation_drawer_close
         );
         drawerLayout.addDrawerListener(toggle);
-        toggle.syncState();
+        toggle.syncState();*/
 
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
         MenuItem menuItem = navigationView.getMenu().getItem(0);
-        OnNavigationItemSelected(menuItem);
+        onNavigationItemSelected(menuItem);
         menuItem.setChecked(true);
 
         drawerLayout.addDrawerListener(this);
@@ -130,19 +129,39 @@ public class Princi extends AppCompatActivity implements NavigationView.OnNaviga
                 throw new  IllegalArgumentException("menu option not implemented!!");
         }
 
-        Fragment fragment = PrinciContentFragment.newInstance(getString(title));
+        Fragment fragment = HomeContentFragment1.newInstance(getString(title));
         FragmentManager fragmentManager = getSupportFragmentManager();
         fragmentManager.beginTransaction().replace(R.id.nav_home, fragment).commit();
 
         setTitle(getString(title));
 
-        drawerLayout.closeDrawer(GravityCompat.START);
+        //drawerLayout.closeDrawer(GravityCompat.START);
 
         return true;
     }
 
     @Override
     public void onPointerCaptureChanged(boolean hasCapture) {
+
+    }
+
+    @Override
+    public void onDrawerSlide(@NonNull View drawerView, float slideOffset) {
+
+    }
+
+    @Override
+    public void onDrawerOpened(@NonNull View drawerView) {
+
+    }
+
+    @Override
+    public void onDrawerClosed(@NonNull View drawerView) {
+
+    }
+
+    @Override
+    public void onDrawerStateChanged(int newState) {
 
     }
 }
