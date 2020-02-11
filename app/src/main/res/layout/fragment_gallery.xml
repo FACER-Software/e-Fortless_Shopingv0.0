@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
 
 
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".formulario">
@@ -56,16 +56,16 @@
 
         <EditText
             android:id="@+id/calorias"
-            android:layout_width="176dp"
+            android:layout_width="match_parent"
             android:layout_height="34dp"
             android:autofillHints=""
             android:inputType="numberDecimal" />
 
         <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:id="@+id/azucares"
-            android:inputType="numberDecimal"/>
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -77,10 +77,10 @@
             android:layout_height="wrap_content"
             android:visibility="invisible">
 
-        <Spinner
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/enfermedad"/>
+            <Spinner
+                android:id="@+id/enfermedad"
+                android:layout_width="404dp"
+                android:layout_height="wrap_content" />
         </LinearLayout>
     </LinearLayout>
 
