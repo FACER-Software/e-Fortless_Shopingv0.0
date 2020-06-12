@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Dietas">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="800dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/fond" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="70dp"
+                    android:layout_marginBottom="30dp"
+                    android:paddingRight="12dp"
+                    android:text="¿Le gustaria recibir una dieta personalizada?"
+                    android:textColor="@color/naranja2"
+                    android:textSize="16dp" />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="70dp"
+                    android:checked="false"
+                    android:showText="false"
+                    android:textOff="Cuida tu alimentacion"
+                    android:textOn="Dieta actual"
+                    android:id="@+id/Siono"
+                    android:thumbTint="@color/naranja"
+                    android:trackTint="@color/azulito1" />
+            </LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="155dp"
+                android:src="@drawable/banner"
+                android:id="@+id/ImgDiet"
+                android:visibility="invisible"/>
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:shrinkColumns="1"
+                android:id="@+id/TabDie"
+                android:visibility="visible">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:visibility="invisible"
+                    android:id="@+id/fi1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="15dp"
+                        android:text="Dieta"
+                        android:textAlignment="center"
+                        android:textColor="@color/naranja2"
+                        android:textSize="16dp" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:visibility="invisible"
+                    android:id="@+id/fi2">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="15dp"
+                        android:gravity="center"
+                        android:text="Puede comer:"
+                        android:textAlignment="center"
+                        android:textColor="@color/naranja2"
+                        android:textSize="16dp" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:visibility="invisible"
+                    android:id="@+id/fi3">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="15dp"
+                        android:text="Alimentos de Origen Animal"
+                        android:textAlignment="center"
+                        android:textColor="@color/naranja2"
+                        android:textSize="16dp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="15dp"
+                        android:text="Carne de Res: La que desee con poca grasa
+Huevo: En cualquier forma con moderacion
+Mariscos y Pescados: Los que usted desee sin empanizar
+Lacteos: Los que desee de preferncia bajos en grasa y azucar"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/naranja2"
+                        android:textSize="16dp" />
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:visibility="invisible"
+                    android:id="@+id/fi4">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="15dp"
+                        android:text="Frutas y Verduras"
+                        android:textAlignment="center"
+                        android:textColor="@color/naranja2"
+                        android:textSize="16dp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="15dp"
+                        android:text="Verduras: Las que desee a excepcion del jitomate crudo
+Frutas: Pepino en poca cantidad"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/naranja2"
+                        android:textSize="16dp" />
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:visibility="invisible"
+                    android:id="@+id/fi5">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="15dp"
+                        android:text="Liquidos"
+                        android:textAlignment="center"
+                        android:textColor="@color/naranja2"
+                        android:textSize="16dp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="15dp"
+                        android:text="Agua natural o Mineral, Agua de sabores naturales, Cafe, Te. Consumir al menos 2 litros de agua al dia"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/naranja2"
+                        android:textSize="16dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:visibility="invisible"
+                    android:id="@+id/fi6">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="15dp"
+                        android:text="Colaciones"
+                        android:textAlignment="center"
+                        android:textColor="@color/naranja2"
+                        android:textSize="16dp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="15dp"
+                        android:text="Pequeñas porciones de los alimentos permitidos"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/naranja2"
+                        android:textSize="16dp" />
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:visibility="invisible"
+                    android:id="@+id/fi7">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="15dp"
+                        android:text="ALIMENTOS PROHIBIDOS"
+                        android:textAlignment="center"
+                        android:textColor="@color/naranja2"
+                        android:textSize="16dp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="15dp"
+                        android:text="Azucares, Frutas y Harinas"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/naranja2"
+                        android:textSize="16dp" />
+
+                </TableRow>
+
+            </TableLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+</ScrollView>

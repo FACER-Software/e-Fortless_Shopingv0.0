@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Carnes">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fond" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/btn_fonfo_color"
+            android:text="Carne molida de sirloin 90/10 por kg $144"
+            android:id="@+id/Molida"
+            android:textColor="@color/azulito1"
+            android:textAllCaps="false"
+            android:textSize="16dp"
+            android:elevation="5dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/btn_fonfo_color"
+            android:text="Chuleta de cerdo ahumada por kg $84"
+            android:id="@+id/Chuleta"
+            android:textColor="@color/azulito1"
+            android:textAllCaps="false"
+            android:textSize="16dp"
+            android:elevation="5dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/btn_fonfo_color"
+            android:text="Chorizo de pavo Fud 200g $30"
+            android:id="@+id/Chorizo"
+            android:textColor="@color/azulito1"
+            android:textAllCaps="false"
+            android:textSize="16dp"
+            android:elevation="5dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/btn_fonfo_color"
+            android:text="Salchicha de pavo Fud 500g $38"
+            android:id="@+id/SalchPav"
+            android:textColor="@color/azulito1"
+            android:textAllCaps="false"
+            android:textSize="16dp"
+            android:elevation="5dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/btn_fonfo_color"
+            android:text="Salchicha Fud para hot dog 500g $39"
+            android:id="@+id/HotDog"
+            android:textColor="@color/azulito1"
+            android:textAllCaps="false"
+            android:textSize="16dp"
+            android:elevation="5dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

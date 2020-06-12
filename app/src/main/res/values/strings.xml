@@ -2,16 +2,30 @@
     <string name="app_name">e-Fortless Shoping</string>
     <string name="title_activity_menu">Menu</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="title_click"> Bienvenido :D</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Android Studio</string>
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
-    <string name="menu_home">Principal</string>
+    <string name="menu_home">E-Fortless Shopping</string>
     <string name="menu_gallery">Cámara RA</string>
     <string name="menu_slideshow">Lector QR</string>
     <string name="menu_tools">Herramientas</string>
     <string name="menu_share">Beacons</string>
     <string name="menu_send">Detalles de mi dieta</string>
+
+    <string-array name="enfermedeades">
+        <item>--Enfermedad coronica que padezca--</item>
+        <item>--Cancer--</item>
+        <item>--Diabetes--</item>
+        <item>--Osteoporosis--</item>
+        <item>--Padecimientos Cardiacos--</item>
+        <item>--Hipertension--</item>
+        <item>--Otros--</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

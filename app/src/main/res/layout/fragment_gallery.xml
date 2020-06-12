@@ -1,40 +1,107 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".formulario">
+
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
         android:src="@drawable/fondo_res" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
         android:orientation="vertical">
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/bajo"
-            >
 
+<<<<<<< Updated upstream
+=======
         </ImageView>
+
+>>>>>>> Stashed changes
         <TextView
             android:id="@+id/text_gallery"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+<<<<<<< Updated upstream
+            android:text="Por favor completa el siguiente formulario para mejorar tu experiencia en la aplicacion"
+            android:textColor="#FFF"
+            android:textSize="20dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/altura"
+            android:inputType="numberDecimal"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/peso"
+            android:inputType="numberDecimal"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/talla"
+            android:inputType="text"/>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/comidas"
+            />
+
+        <EditText
+            android:id="@+id/calorias"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:autofillHints=""
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/azucares"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¿Padeces de 1 a 2 enfermedades?" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible">
+
+            <Spinner
+                android:id="@+id/enfermedad"
+                android:layout_width="404dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+=======
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
+            android:text="Pendejos"
             android:textAlignment="center"
-            android:textSize="30sp"
             android:textColor="#FFF"
-            android:text="Nuestros 4 programadores y una Fermur se encuentran trabajando en esta area"
+            android:textSize="30sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+>>>>>>> Stashed changes
     </LinearLayout>
 
 </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Lacteos">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fond" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/btn_fonfo_color"
+            android:text="Leche LALA Entera 1L $21"
+            android:id="@+id/leche"
+            android:textColor="@color/azulito1"
+            android:textAllCaps="false"
+            android:textSize="16dp"
+            android:elevation="5dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/btn_fonfo_color"
+            android:text="Yoghurt Oikos estilo griego natural 150g $12"
+            android:id="@+id/oikos"
+            android:textColor="@color/azulito1"
+            android:textAllCaps="false"
+            android:textSize="16dp"
+            android:elevation="5dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/btn_fonfo_color"
+            android:text="Queso tipo manchego Fud fundido 140g $28"
+            android:id="@+id/Queso"
+            android:textColor="@color/azulito1"
+            android:textAllCaps="false"
+            android:textSize="16dp"
+            android:elevation="5dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/btn_fonfo_color"
+            android:text="Mantequilla sin sal Iberia en barra 225g $24"
+            android:id="@+id/Mantequilla"
+            android:textColor="@color/azulito1"
+            android:textAllCaps="false"
+            android:textSize="16dp"
+            android:elevation="5dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/btn_fonfo_color"
+            android:text="Helado Holanda Qso/Zarzamora 1 Lt $33"
+            android:id="@+id/Helado"
+            android:textColor="@color/azulito1"
+            android:textAllCaps="false"
+            android:textSize="16dp"
+            android:elevation="5dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
