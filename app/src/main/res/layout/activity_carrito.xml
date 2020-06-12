@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Carrito">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fond" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:textAllCaps="false"
+            android:textColor="@color/naranja2"
+            android:textAlignment="center"
+            android:textSize="16dp"
+            android:text="Productos:"
+            android:id="@+id/Productos"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textAllCaps="false"
+            android:textColor="@color/naranja2"
+            android:textAlignment="center"
+            android:textSize="16dp"
+            android:text="Total: "
+            android:id="@+id/Total"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textAllCaps="false"
+            android:textColor="@color/naranja2"
+            android:textAlignment="center"
+            android:textSize="16dp"
+            android:text="Numero de Articulos: "
+            android:id="@+id/Num"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/btn_fonfo_color"
+            android:text="Actualizar Carrito"
+            android:id="@+id/Actualizar"
+            android:textColor="@color/azulito1"
+            android:textAllCaps="false"
+            android:textSize="16dp"
+            android:elevation="5dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/btn_fonfo_color"
+            android:text="Vaciar Carrito"
+            android:id="@+id/Vaciar"
+            android:textColor="@color/azulito1"
+            android:textAllCaps="false"
+            android:textSize="16dp"
+            android:elevation="5dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

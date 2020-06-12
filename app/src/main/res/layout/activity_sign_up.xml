@@ -16,7 +16,7 @@
             android:layout_width="match_parent"
             android:layout_height="800dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/fondo_res" />
+            android:src="@drawable/fond" />
 
 
         <LinearLayout
@@ -104,12 +104,11 @@
                 android:paddingRight="10dp"
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp"/>
-
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/Usuario"
-                android:hint="Nickname"
+                android:id="@+id/Muni"
+                android:hint="Municipio / Alcaldia"
                 android:inputType="text"
                 android:layout_marginBottom="15dp"
                 android:textColor="@color/naranja2"
@@ -126,6 +125,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
+                android:id="@+id/GrupoMarrano"
                 android:gravity="center"
                 android:paddingLeft="20dp"
                 android:paddingRight="10dp"

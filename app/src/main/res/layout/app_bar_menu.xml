@@ -2,6 +2,7 @@
 <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Pincipalito"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Princi">
@@ -21,11 +22,140 @@
     </com.google.android.material.appbar.AppBarLayout>
 
     <include layout="@layout/content_menu" />
+
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        android:src="@drawable/fondo_res" />
+        android:src="@drawable/fond" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="top"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/atleta">
+
+            </ImageView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_gallery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="¡Bienvenido!"
+                    android:textAlignment="center"
+                    android:textColor="#FFF"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="Recuerda hacer al menos 30 minutos de ejercicio al dia :D"
+                    android:textAlignment="center"
+                    android:textColor="@color/blanco"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/Lacteos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/btn_fonfo_color"
+            android:drawableLeft="@drawable/leche"
+            android:elevation="5dp"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:text="Lacteos"
+            android:textAllCaps="false"
+            android:textColor="@color/azulito1"
+            android:textSize="16dp"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/Carnes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/btn_fonfo_color"
+            android:drawableLeft="@drawable/parrilla"
+            android:elevation="5dp"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:text="Carnes y embutidos"
+            android:textAllCaps="false"
+            android:textColor="@color/azulito1"
+            android:textSize="16dp"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/Frutas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/btn_fonfo_color"
+            android:drawableLeft="@drawable/fruta"
+            android:elevation="5dp"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:text="Frutas y verduras"
+            android:textAllCaps="false"
+            android:textColor="@color/azulito1"
+            android:textSize="16dp"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/Paps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/btn_fonfo_color"
+            android:drawableLeft="@drawable/bocadillo"
+            android:elevation="5dp"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:text="Frituras y confitéria"
+            android:textAllCaps="false"
+            android:textColor="@color/azulito1"
+            android:textSize="16dp"
+            android:visibility="invisible" />
+    </LinearLayout>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
@@ -33,6 +163,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+        android:backgroundTint="@color/azulito1"
+        app:srcCompat="@drawable/peficono" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

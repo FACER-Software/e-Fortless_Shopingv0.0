@@ -21,6 +21,7 @@
             >
 
         </ImageView>
+
         <TextView
             android:id="@+id/text_share"
             android:layout_width="match_parent"
@@ -28,10 +29,10 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
+            android:text="Me cago en ti"
             android:textAlignment="center"
-            android:textSize="30sp"
             android:textColor="#FFF"
-            android:text="Nuestros 4 programadores y una Fermur se encuentran trabajando en esta area"
+            android:textSize="30sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />

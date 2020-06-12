@@ -2,40 +2,28 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
-
-    <item android:title="Acciones">
-    <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_Principal"
             android:icon="@drawable/icono"
             android:title="@string/menu_home" />
         <item
-            android:id="@+id/nav_CamaraRA"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="@string/menu_gallery" />
+            android:id="@+id/nav_Perfil"
+            android:icon="@drawable/perf"
+            android:title="Mi perfil" />
+
         <item
-            android:id="@+id/nav_QR"
-            android:icon="@drawable/qr"
-            android:title="@string/menu_slideshow" />
+            android:id="@+id/nav_CamaraRA"
+            android:icon="@drawable/ar"
+            android:title="@string/menu_gallery" />
 
-    </group>
-    </item>
+        <item
+            android:id="@+id/nav_Dieta"
+            android:icon="@drawable/comida"
+            android:title="@string/menu_send" />
+        <item
+            android:id="@+id/nav_tools"
+            android:icon="@drawable/engranaje"
+            android:title="@string/menu_tools" />
 
-    <item android:title="Ajustes Rapidos">
-        <menu>
-            <item
-                android:id="@+id/nav_Beacons"
-                android:icon="@drawable/blue"
-                android:title="@string/menu_share" />
-            <item
-                android:id="@+id/nav_Dieta"
-                android:icon="@drawable/diet"
-                android:title="@string/menu_send" />
-            <item
-                android:id="@+id/nav_tools"
-                android:icon="@drawable/ic_menu_manage"
-                android:title="@string/menu_tools" />
-        </menu>
-    </item>
 
 </menu>

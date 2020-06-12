@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Frituras">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fond" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/btn_fonfo_color"
+            android:text="Doritos Nacho sabor queso 245g $35"
+            android:id="@+id/Doritos"
+            android:textColor="@color/azulito1"
+            android:textAllCaps="false"
+            android:textSize="16dp"
+            android:elevation="5dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/btn_fonfo_color"
+            android:text="Takis Fuego 280g $34"
+            android:id="@+id/Takis"
+            android:textColor="@color/azulito1"
+            android:textAllCaps="false"
+            android:textSize="16dp"
+            android:elevation="5dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/btn_fonfo_color"
+            android:text="Papas Ruffles sabor queso 200g $35"
+            android:id="@+id/Ruffles"
+            android:textColor="@color/azulito1"
+            android:textAllCaps="false"
+            android:textSize="16dp"
+            android:elevation="5dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/btn_fonfo_color"
+            android:text="Chocolates Turin Conejos 30 pzas $200"
+            android:id="@+id/Conejos"
+            android:textColor="@color/azulito1"
+            android:textAllCaps="false"
+            android:textSize="16dp"
+            android:elevation="5dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/btn_fonfo_color"
+            android:text="Crema de avellanas Nutella 650g $97"
+            android:id="@+id/Nutella"
+            android:textColor="@color/azulito1"
+            android:textAllCaps="false"
+            android:textSize="16dp"
+            android:elevation="5dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

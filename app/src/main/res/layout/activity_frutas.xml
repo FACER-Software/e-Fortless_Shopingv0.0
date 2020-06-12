@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Frutas">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fond" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/btn_fonfo_color"
+            android:text="Cerezas 454g $74"
+            android:id="@+id/Cereza"
+            android:textColor="@color/azulito1"
+            android:textAllCaps="false"
+            android:textSize="16dp"
+            android:elevation="5dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/btn_fonfo_color"
+            android:text="Durazno importado por kg $49"
+            android:id="@+id/Durazno"
+            android:textColor="@color/azulito1"
+            android:textAllCaps="false"
+            android:textSize="16dp"
+            android:elevation="5dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/btn_fonfo_color"
+            android:text="Fresas 454g $50"
+            android:id="@+id/Fresas"
+            android:textColor="@color/azulito1"
+            android:textAllCaps="false"
+            android:textSize="16dp"
+            android:elevation="5dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/btn_fonfo_color"
+            android:text="Elote amarillo por pieza $17"
+            android:id="@+id/Elote"
+            android:textColor="@color/azulito1"
+            android:textAllCaps="false"
+            android:textSize="16dp"
+            android:elevation="5dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/btn_fonfo_color"
+            android:text="Ajo orgánico Campo Vivo 120g $15"
+            android:id="@+id/Ajo"
+            android:textColor="@color/azulito1"
+            android:textAllCaps="false"
+            android:textSize="16dp"
+            android:elevation="5dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

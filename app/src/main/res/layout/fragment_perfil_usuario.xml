@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PerfilUsuario">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="800dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fond" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="25dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="Comic Sans MS"
+            android:text="Información de usuario"
+            android:textAllCaps="false"
+            android:textColor="@color/naranja2"
+            android:textSize="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:gravity="left"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/atleta" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="left"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="Comic Sans MS"
+                    android:text="ID usuario: 1"
+                    android:textAllCaps="false"
+                    android:textColor="@color/naranja2"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="Comic Sans MS"
+                    android:text="Nombre: Javier Enrique"
+                    android:textAllCaps="false"
+                    android:textColor="@color/naranja2"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="Comic Sans MS"
+                    android:text="Apellidos: Hernandez Beltran"
+                    android:textAllCaps="false"
+                    android:textColor="@color/naranja2"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="Comic Sans MS"
+                    android:text="Correo jehb2002hotmail.com"
+                    android:textAllCaps="false"
+                    android:textColor="@color/naranja2"
+                    android:textSize="10dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:text="Cambiar Contraseña                                >"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textColor="@color/naranja1"
+            android:textSize="16dp"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="Comic Sans MS"
+            android:text="Datos personales"
+            android:textAllCaps="false"
+            android:textColor="@color/naranja2"
+            android:textSize="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:fontFamily="Comic Sans MS"
+                    android:gravity="center_vertical"
+                    android:text="Fecha de Nacimiento"
+                    android:textAllCaps="false"
+                    android:textColor="@color/naranja1"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:fontFamily="Comic Sans MS"
+                    android:gravity="center_vertical"
+                    android:text="Edad"
+                    android:textAllCaps="false"
+                    android:textColor="@color/naranja1"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:fontFamily="Comic Sans MS"
+                    android:gravity="center_vertical"
+                    android:text="Altura"
+                    android:textAllCaps="false"
+                    android:textColor="@color/naranja1"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:fontFamily="Comic Sans MS"
+                    android:gravity="center_vertical"
+                    android:text="Peso"
+                    android:textAllCaps="false"
+                    android:textColor="@color/naranja1"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:fontFamily="Comic Sans MS"
+                    android:gravity="center_vertical"
+                    android:text="Talla"
+                    android:textAllCaps="false"
+                    android:textColor="@color/naranja1"
+                    android:textSize="16dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:fontFamily="Comic Sans MS"
+                    android:gravity="center_vertical"
+                    android:text="IMC"
+                    android:textAllCaps="false"
+                    android:textColor="@color/naranja1"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="107dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_gravity="left"
+                    android:fontFamily="Comic Sans MS"
+                    android:text="25/01/02"
+                    android:textAlignment="viewEnd"
+                    android:textAllCaps="false"
+                    android:textColor="@color/blanco"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:fontFamily="Comic Sans MS"
+                    android:gravity="center_vertical"
+                    android:text="18"
+                    android:textAllCaps="false"
+                    android:textColor="@color/blanco"
+                    android:textAlignment="viewEnd"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:fontFamily="Comic Sans MS"
+                    android:gravity="center_vertical"
+                    android:text="1.70 m"
+                    android:textAllCaps="false"
+                    android:textColor="@color/blanco"
+                    android:textAlignment="viewEnd"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:fontFamily="Comic Sans MS"
+                    android:gravity="center_vertical"
+                    android:text="72 kg"
+                    android:textAllCaps="false"
+                    android:textColor="@color/blanco"
+                    android:textAlignment="viewEnd"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:fontFamily="Comic Sans MS"
+                    android:gravity="center_vertical"
+                    android:text="Grande"
+                    android:textAllCaps="false"
+                    android:textColor="@color/blanco"
+                    android:textAlignment="viewEnd"
+                    android:textSize="16dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:fontFamily="Comic Sans MS"
+                    android:gravity="center_vertical"
+                    android:text="24.9"
+                    android:textAllCaps="false"
+                    android:textColor="@color/blanco"
+                    android:textAlignment="viewEnd"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="Comic Sans MS"
+            android:text="Informacion de pago: Si"
+            android:textAllCaps="false"
+            android:textColor="@color/naranja"
+            android:textSize="30dp" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/imc"/>
+    </LinearLayout>
+</FrameLayout>
